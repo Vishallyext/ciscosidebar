@@ -241,6 +241,9 @@
                 <section class="modal-card-body">
                   <div class="mx-5">
                     <h2 class="subtitle is-4">Company Profile</h2>
+                    <button id="open-subform" class="button is-primary mb-3">
+                         Add Extra Details
+                    </button>
                     <div id="script-settings-div" class="columns ml-0 mb-6"></div>
                     <div class="columns ml-0">
                       <div class="column is-two-fifths">
@@ -264,6 +267,24 @@
                         <span class="icon"><i class="fas fa-plus" aria-hidden="true"></i></span>
                     </div>
                   </div>
+                  <div class="mx-5 mt-6">
+                    <h2 class="subtitle is-4 my-1">Call Logs</h2>
+
+                    <div id="callog-settings-table" class="box p-4">
+                      <table class="table is-striped is-hoverable is-fullwidth">
+                        <thead>
+                          <tr>
+                            <th>Field1</th>
+                            <th>Field2</th>
+                          </tr>
+                        </thead>
+
+                        <tbody id="call-log-settings">
+                          <!-- Your dynamic rows will fill here -->
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
                 </section>
                 <footer class="modal-card-foot py-2">
                   <div class="columns" style="width:100%;">
@@ -281,6 +302,43 @@
                 </footer>
             </div>
         </div>
+      <!-- SUBFORM POPUP MODAL -->
+<div id="modal-subform" class="modal">
+<div class="modal-background"></div>
+<div class="modal-card" style="width:40%;">
+<header class="modal-card-head">
+<p class="modal-card-title">Extra Details</p>
+<button id="modal-subform-close" class="delete"></button>
+</header>
+ 
+    <section class="modal-card-body">
+<div class="field">
+<label class="label">Field 1</label>
+<input id="sf-field1" class="input" type="text">
+</div>
+ 
+      <div class="field">
+<label class="label">Field 2</label>
+<input id="sf-field2" class="input" type="text">
+</div>
+ 
+      <div class="field">
+<label class="label">Field 3</label>
+<input id="sf-field3" class="input" type="number">
+</div>
+ 
+      <div class="field">
+<label class="label">Field 4</label>
+<textarea id="sf-field4" class="textarea"></textarea>
+</div>
+</section>
+ 
+    <footer class="modal-card-foot">
+<button id="modal-subform-save" class="button is-info">Save</button>
+<button id="modal-subform-close-lower" class="button">Cancel</button>
+</footer>
+</div>
+</div>
     </body>
     <script crossorigin src="https://unpkg.com/webex@^3/umd/webex.min.js"></script>
     <script crossorigin src="https://cdn.jsdelivr.net/npm/webex@3.7.0/umd/webex.min.js"></script>
