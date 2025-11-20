@@ -13,6 +13,10 @@ function closeAllModals() {
     };
 }
 
+// function addCallLogRow(call_log){
+
+// }
+
 
 function addActionRow(action){
     let nameInput = $(`<input name="action-name" class="input" type="text" placeholder="Contact Name">`);
@@ -83,6 +87,13 @@ function fillSettings(data){
             addActionRow(action);
         }
     }
+    // $('#call-log-settings').empty();
+    // if(data){
+    //     for(let call_log of data["call_logs"]){
+    //         customLog('fillSettings calllogs:', call_log);
+    //         addCallLogRow(call_log);
+    //     }
+    // }
 }
 
 
